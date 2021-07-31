@@ -32,7 +32,7 @@ app.get('/users', (request, response) => {
 })
 
 
-app.post(() => '/pirates', (request, response) => { 
+app.post(() => '/users', (request, response) => { 
     const { user } = request.body
     User.create(user)
         .then(pirate => response.json(user))// could also do response.send(user)
